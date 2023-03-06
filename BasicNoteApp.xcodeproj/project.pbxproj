@@ -68,6 +68,7 @@
 		2DA67D6029B62CB100064D86 /* BasicNoteApp */ = {
 			isa = PBXGroup;
 			children = (
+				2DA67D9A29B63C1E00064D86 /* Scenes */,
 				2DA67D9729B6387200064D86 /* Components */,
 				2DA67D9429B634F200064D86 /* Extensions */,
 				2DA67D7A29B6327F00064D86 /* Inter */,
@@ -115,6 +116,13 @@
 				2DA67D9829B6392D00064D86 /* CustomButton.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		2DA67D9A29B63C1E00064D86 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Scenes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
