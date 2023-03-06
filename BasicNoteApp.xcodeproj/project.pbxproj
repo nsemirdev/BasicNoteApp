@@ -13,6 +13,12 @@
 		2DA67D6929B62CB100064D86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DA67D6729B62CB100064D86 /* Main.storyboard */; };
 		2DA67D6B29B62CB200064D86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DA67D6A29B62CB200064D86 /* Assets.xcassets */; };
 		2DA67D6E29B62CB200064D86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DA67D6C29B62CB200064D86 /* LaunchScreen.storyboard */; };
+		2DA67D7729B62CFB00064D86 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA67D7629B62CFB00064D86 /* UIColor+.swift */; };
+		2DA67D7929B6323300064D86 /* UIFont+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA67D7829B6323300064D86 /* UIFont+.swift */; };
+		2DA67D8929B6327F00064D86 /* Inter-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2DA67D7D29B6327F00064D86 /* Inter-Medium.ttf */; };
+		2DA67D9129B6327F00064D86 /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2DA67D8529B6327F00064D86 /* Inter-SemiBold.ttf */; };
+		2DA67D9629B634F800064D86 /* UILabel+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA67D9529B634F800064D86 /* UILabel+.swift */; };
+		2DA67D9929B6392D00064D86 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA67D9829B6392D00064D86 /* CustomButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		2DA67D6A29B62CB200064D86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2DA67D6D29B62CB200064D86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2DA67D6F29B62CB200064D86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2DA67D7629B62CFB00064D86 /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
+		2DA67D7829B6323300064D86 /* UIFont+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+.swift"; sourceTree = "<group>"; };
+		2DA67D7D29B6327F00064D86 /* Inter-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Medium.ttf"; sourceTree = "<group>"; };
+		2DA67D8529B6327F00064D86 /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.ttf"; sourceTree = "<group>"; };
+		2DA67D9529B634F800064D86 /* UILabel+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+.swift"; sourceTree = "<group>"; };
+		2DA67D9829B6392D00064D86 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,10 @@
 		2DA67D6029B62CB100064D86 /* BasicNoteApp */ = {
 			isa = PBXGroup;
 			children = (
+				2DA67D9729B6387200064D86 /* Components */,
+				2DA67D9429B634F200064D86 /* Extensions */,
+				2DA67D7A29B6327F00064D86 /* Inter */,
+				2DA67D7529B62CF000064D86 /* Helpers */,
 				2DA67D6129B62CB100064D86 /* AppDelegate.swift */,
 				2DA67D6329B62CB100064D86 /* SceneDelegate.swift */,
 				2DA67D6529B62CB100064D86 /* ViewController.swift */,
@@ -65,6 +81,40 @@
 				2DA67D6F29B62CB200064D86 /* Info.plist */,
 			);
 			path = BasicNoteApp;
+			sourceTree = "<group>";
+		};
+		2DA67D7529B62CF000064D86 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				2DA67D7629B62CFB00064D86 /* UIColor+.swift */,
+				2DA67D7829B6323300064D86 /* UIFont+.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		2DA67D7A29B6327F00064D86 /* Inter */ = {
+			isa = PBXGroup;
+			children = (
+				2DA67D7D29B6327F00064D86 /* Inter-Medium.ttf */,
+				2DA67D8529B6327F00064D86 /* Inter-SemiBold.ttf */,
+			);
+			path = Inter;
+			sourceTree = "<group>";
+		};
+		2DA67D9429B634F200064D86 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2DA67D9529B634F800064D86 /* UILabel+.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2DA67D9729B6387200064D86 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				2DA67D9829B6392D00064D86 /* CustomButton.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +176,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2DA67D6E29B62CB200064D86 /* LaunchScreen.storyboard in Resources */,
+				2DA67D9129B6327F00064D86 /* Inter-SemiBold.ttf in Resources */,
 				2DA67D6B29B62CB200064D86 /* Assets.xcassets in Resources */,
+				2DA67D8929B6327F00064D86 /* Inter-Medium.ttf in Resources */,
 				2DA67D6929B62CB100064D86 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,7 +190,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DA67D9629B634F800064D86 /* UILabel+.swift in Sources */,
 				2DA67D6629B62CB100064D86 /* ViewController.swift in Sources */,
+				2DA67D7729B62CFB00064D86 /* UIColor+.swift in Sources */,
+				2DA67D7929B6323300064D86 /* UIFont+.swift in Sources */,
+				2DA67D9929B6392D00064D86 /* CustomButton.swift in Sources */,
 				2DA67D6229B62CB100064D86 /* AppDelegate.swift in Sources */,
 				2DA67D6429B62CB100064D86 /* SceneDelegate.swift in Sources */,
 			);
