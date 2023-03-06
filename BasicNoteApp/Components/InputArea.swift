@@ -8,7 +8,7 @@
 import UIKit
 
 final class InputArea: UIStackView, InputViewDelegate {
-    
+
     private var inputTextField: InputView!
     private let errorLabel = UILabel(.title5, .helperRed)
     private lazy var errorStack = HorizontalStack([
@@ -16,6 +16,7 @@ final class InputArea: UIStackView, InputViewDelegate {
         errorLabel,
         UIView()
     ])
+    var delegate: InputAreaDelegate?
     
     convenience init(_ type: InputView.`Type`) {
         self.init(frame: .zero)
@@ -27,14 +28,15 @@ final class InputArea: UIStackView, InputViewDelegate {
         errorLabel.text = type.rawValue
     }
     
-    func didInvalidSelection() {
+    func didInvalidSelection(with type: InputView.`Type`) {
         inputTextField.layer.borderColor = UIColor.helperRed.cgColor
         addArrangedSubview(errorStack)
+        delegate?.didInvalidSelectionOf(type: type)
     }
     
-    func didValidSelection() {
+    func didValidSelection(with type: InputView.`Type`) {
         inputTextField.layer.borderColor = UIColor.purple100.cgColor
-
+        delegate?.didValidSelectionOf(type: type)
         if arrangedSubviews.count != 1 {
             arrangedSubviews[1].removeFromSuperview()
         }

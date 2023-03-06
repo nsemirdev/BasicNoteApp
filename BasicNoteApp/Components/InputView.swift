@@ -11,7 +11,7 @@ import SnapKit
 final class InputView: UIView, UITextFieldDelegate {
 
     override var intrinsicContentSize: CGSize {
-        .init(width: 0, height: 53)
+        .init(width: 0, height: 55)
     }
     
     var validationCallback: ((String) -> Bool)?
@@ -23,6 +23,7 @@ final class InputView: UIView, UITextFieldDelegate {
     }
     
     var delegate: InputViewDelegate?
+    var type: `Type`?
     
     private let placeholderLabel = UILabel(.title4medium, .textSecondary)
     
@@ -37,6 +38,7 @@ final class InputView: UIView, UITextFieldDelegate {
     
     convenience init(type: `Type`) {
         self.init(frame: .zero)
+        self.type = type
         textField.delegate = self
         handleType(type)
         setupViews()
@@ -61,7 +63,6 @@ final class InputView: UIView, UITextFieldDelegate {
     
     private func setupViews() {
         addSubviews(placeholderLabel, textField)
-        placeholderLabel.translatesAutoresizingMaskIntoConstraints = false
     
         placeholderLabel.snp.makeConstraints { make in
             make.centerY.equalToSuperview()
@@ -84,6 +85,8 @@ final class InputView: UIView, UITextFieldDelegate {
     
     func textFieldDidEndEditing(_ textField: UITextField) {
         if textField.text == "" {
+            delegate?.didValidSelection(with: type!)
+            
             UIView.animate(withDuration: 0.1) {
                 self.placeholderLabel.transform = .identity
                 self.layoutIfNeeded()
@@ -98,9 +101,9 @@ final class InputView: UIView, UITextFieldDelegate {
     func textFieldDidChangeSelection(_ textField: UITextField) {
         guard let validationCallback else { return }
         if !validationCallback(textField.text!) {
-            delegate?.didInvalidSelection()
+            delegate?.didInvalidSelection(with: type!)
         } else {
-            delegate?.didValidSelection()
+            delegate?.didValidSelection(with: type!)
         }
     }
     

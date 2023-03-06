@@ -5,9 +5,9 @@
 //  Created by Emir Alkal on 6.03.2023.
 //
 
-import Foundation
+import UIKit
 
 protocol InputViewDelegate {
-    func didInvalidSelection()
-    func didValidSelection()
+    func didInvalidSelection(with type: InputView.`Type`)
+    func didValidSelection(with type: InputView.`Type`)
 }

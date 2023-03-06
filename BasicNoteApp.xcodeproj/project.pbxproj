@@ -26,6 +26,10 @@
 		2DA67DAD29B64D8F00064D86 /* VerticalStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA67DAC29B64D8F00064D86 /* VerticalStack.swift */; };
 		2DA67DAF29B64E0700064D86 /* HorizontalStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA67DAE29B64E0700064D86 /* HorizontalStack.swift */; };
 		2DA67DB129B652BE00064D86 /* Validations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA67DB029B652BE00064D86 /* Validations.swift */; };
+		2DA67DB329B6714800064D86 /* InputAreaDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA67DB229B6714800064D86 /* InputAreaDelegate.swift */; };
+		2DA67DB529B671EA00064D86 /* InputStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA67DB429B671EA00064D86 /* InputStack.swift */; };
+		2DA67DB729B6746A00064D86 /* InputStackDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA67DB629B6746A00064D86 /* InputStackDelegate.swift */; };
+		2DA67DB929B67E5A00064D86 /* UIButton+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA67DB829B67E5A00064D86 /* UIButton+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +53,10 @@
 		2DA67DAC29B64D8F00064D86 /* VerticalStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalStack.swift; sourceTree = "<group>"; };
 		2DA67DAE29B64E0700064D86 /* HorizontalStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalStack.swift; sourceTree = "<group>"; };
 		2DA67DB029B652BE00064D86 /* Validations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validations.swift; sourceTree = "<group>"; };
+		2DA67DB229B6714800064D86 /* InputAreaDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputAreaDelegate.swift; sourceTree = "<group>"; };
+		2DA67DB429B671EA00064D86 /* InputStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputStack.swift; sourceTree = "<group>"; };
+		2DA67DB629B6746A00064D86 /* InputStackDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputStackDelegate.swift; sourceTree = "<group>"; };
+		2DA67DB829B67E5A00064D86 /* UIButton+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +116,7 @@
 				2DA67D7829B6323300064D86 /* UIFont+.swift */,
 				2DA67D9529B634F800064D86 /* UILabel+.swift */,
 				2DA67DA529B6411100064D86 /* UIView+.swift */,
+				2DA67DB829B67E5A00064D86 /* UIButton+.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -120,6 +129,7 @@
 				2DA67DAA29B64A6400064D86 /* InputArea.swift */,
 				2DA67DAC29B64D8F00064D86 /* VerticalStack.swift */,
 				2DA67DAE29B64E0700064D86 /* HorizontalStack.swift */,
+				2DA67DB429B671EA00064D86 /* InputStack.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -165,6 +175,8 @@
 			isa = PBXGroup;
 			children = (
 				2DA67DA829B64A0200064D86 /* InputViewDelegate.swift */,
+				2DA67DB229B6714800064D86 /* InputAreaDelegate.swift */,
+				2DA67DB629B6746A00064D86 /* InputStackDelegate.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -248,8 +260,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2DA67D9629B634F800064D86 /* UILabel+.swift in Sources */,
+				2DA67DB529B671EA00064D86 /* InputStack.swift in Sources */,
 				2DA67D7729B62CFB00064D86 /* UIColor+.swift in Sources */,
 				2DA67DAD29B64D8F00064D86 /* VerticalStack.swift in Sources */,
+				2DA67DB729B6746A00064D86 /* InputStackDelegate.swift in Sources */,
 				2DA67D7929B6323300064D86 /* UIFont+.swift in Sources */,
 				2DA67D9F29B63D1100064D86 /* RegisterController.swift in Sources */,
 				2DA67DAB29B64A6400064D86 /* InputArea.swift in Sources */,
@@ -258,7 +272,9 @@
 				2DA67DAF29B64E0700064D86 /* HorizontalStack.swift in Sources */,
 				2DA67DA129B63D6500064D86 /* InputView.swift in Sources */,
 				2DA67DA929B64A0200064D86 /* InputViewDelegate.swift in Sources */,
+				2DA67DB929B67E5A00064D86 /* UIButton+.swift in Sources */,
 				2DA67DA629B6411100064D86 /* UIView+.swift in Sources */,
+				2DA67DB329B6714800064D86 /* InputAreaDelegate.swift in Sources */,
 				2DA67D6229B62CB100064D86 /* AppDelegate.swift in Sources */,
 				2DA67D6429B62CB100064D86 /* SceneDelegate.swift in Sources */,
 			);
