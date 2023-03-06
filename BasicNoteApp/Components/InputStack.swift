@@ -38,12 +38,6 @@ final class InputStack: VerticalStack, InputAreaDelegate {
         
         arrangedSubviews.forEach {
             $0.delegate = self
-            
         }
-//        inputStack.subviews.forEach {
-        //            $0.snp.makeConstraints { make in
-        //                make.width.equalTo(view.frame.size.width - 48)
-        //            }
-        //        }
     }
 }

@@ -85,8 +85,6 @@ final class InputView: UIView, UITextFieldDelegate {
     
     func textFieldDidEndEditing(_ textField: UITextField) {
         if textField.text == "" {
-            delegate?.didValidSelection(with: type!)
-            
             UIView.animate(withDuration: 0.1) {
                 self.placeholderLabel.transform = .identity
                 self.layoutIfNeeded()
