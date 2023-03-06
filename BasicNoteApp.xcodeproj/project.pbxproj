@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		2DA67D6229B62CB100064D86 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA67D6129B62CB100064D86 /* AppDelegate.swift */; };
 		2DA67D6429B62CB100064D86 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA67D6329B62CB100064D86 /* SceneDelegate.swift */; };
-		2DA67D6629B62CB100064D86 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA67D6529B62CB100064D86 /* ViewController.swift */; };
-		2DA67D6929B62CB100064D86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DA67D6729B62CB100064D86 /* Main.storyboard */; };
 		2DA67D6B29B62CB200064D86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DA67D6A29B62CB200064D86 /* Assets.xcassets */; };
 		2DA67D6E29B62CB200064D86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DA67D6C29B62CB200064D86 /* LaunchScreen.storyboard */; };
 		2DA67D7729B62CFB00064D86 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA67D7629B62CFB00064D86 /* UIColor+.swift */; };
@@ -19,14 +17,21 @@
 		2DA67D9129B6327F00064D86 /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2DA67D8529B6327F00064D86 /* Inter-SemiBold.ttf */; };
 		2DA67D9629B634F800064D86 /* UILabel+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA67D9529B634F800064D86 /* UILabel+.swift */; };
 		2DA67D9929B6392D00064D86 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA67D9829B6392D00064D86 /* CustomButton.swift */; };
+		2DA67D9F29B63D1100064D86 /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA67D9E29B63D1100064D86 /* RegisterController.swift */; };
+		2DA67DA129B63D6500064D86 /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA67DA029B63D6500064D86 /* InputView.swift */; };
+		2DA67DA429B63F2500064D86 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 2DA67DA329B63F2500064D86 /* SnapKit */; };
+		2DA67DA629B6411100064D86 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA67DA529B6411100064D86 /* UIView+.swift */; };
+		2DA67DA929B64A0200064D86 /* InputViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA67DA829B64A0200064D86 /* InputViewDelegate.swift */; };
+		2DA67DAB29B64A6400064D86 /* InputArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA67DAA29B64A6400064D86 /* InputArea.swift */; };
+		2DA67DAD29B64D8F00064D86 /* VerticalStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA67DAC29B64D8F00064D86 /* VerticalStack.swift */; };
+		2DA67DAF29B64E0700064D86 /* HorizontalStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA67DAE29B64E0700064D86 /* HorizontalStack.swift */; };
+		2DA67DB129B652BE00064D86 /* Validations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA67DB029B652BE00064D86 /* Validations.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2DA67D5E29B62CB100064D86 /* BasicNoteApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasicNoteApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DA67D6129B62CB100064D86 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2DA67D6329B62CB100064D86 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2DA67D6529B62CB100064D86 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		2DA67D6829B62CB100064D86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2DA67D6A29B62CB200064D86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2DA67D6D29B62CB200064D86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2DA67D6F29B62CB200064D86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -36,6 +41,14 @@
 		2DA67D8529B6327F00064D86 /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.ttf"; sourceTree = "<group>"; };
 		2DA67D9529B634F800064D86 /* UILabel+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+.swift"; sourceTree = "<group>"; };
 		2DA67D9829B6392D00064D86 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		2DA67D9E29B63D1100064D86 /* RegisterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
+		2DA67DA029B63D6500064D86 /* InputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
+		2DA67DA529B6411100064D86 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
+		2DA67DA829B64A0200064D86 /* InputViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewDelegate.swift; sourceTree = "<group>"; };
+		2DA67DAA29B64A6400064D86 /* InputArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputArea.swift; sourceTree = "<group>"; };
+		2DA67DAC29B64D8F00064D86 /* VerticalStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalStack.swift; sourceTree = "<group>"; };
+		2DA67DAE29B64E0700064D86 /* HorizontalStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalStack.swift; sourceTree = "<group>"; };
+		2DA67DB029B652BE00064D86 /* Validations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validations.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DA67DA429B63F2500064D86 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,29 +82,14 @@
 		2DA67D6029B62CB100064D86 /* BasicNoteApp */ = {
 			isa = PBXGroup;
 			children = (
-				2DA67D9A29B63C1E00064D86 /* Scenes */,
+				2DA67DA729B649F500064D86 /* Protocols */,
+				2DA67D9C29B63C7300064D86 /* AppDelegate */,
+				2DA67D9B29B63C6700064D86 /* Resources */,
 				2DA67D9729B6387200064D86 /* Components */,
 				2DA67D9429B634F200064D86 /* Extensions */,
-				2DA67D7A29B6327F00064D86 /* Inter */,
-				2DA67D7529B62CF000064D86 /* Helpers */,
-				2DA67D6129B62CB100064D86 /* AppDelegate.swift */,
-				2DA67D6329B62CB100064D86 /* SceneDelegate.swift */,
-				2DA67D6529B62CB100064D86 /* ViewController.swift */,
-				2DA67D6729B62CB100064D86 /* Main.storyboard */,
-				2DA67D6A29B62CB200064D86 /* Assets.xcassets */,
-				2DA67D6C29B62CB200064D86 /* LaunchScreen.storyboard */,
-				2DA67D6F29B62CB200064D86 /* Info.plist */,
+				2DA67D9A29B63C1E00064D86 /* Scenes */,
 			);
 			path = BasicNoteApp;
-			sourceTree = "<group>";
-		};
-		2DA67D7529B62CF000064D86 /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				2DA67D7629B62CFB00064D86 /* UIColor+.swift */,
-				2DA67D7829B6323300064D86 /* UIFont+.swift */,
-			);
-			path = Helpers;
 			sourceTree = "<group>";
 		};
 		2DA67D7A29B6327F00064D86 /* Inter */ = {
@@ -105,7 +104,10 @@
 		2DA67D9429B634F200064D86 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				2DA67D7629B62CFB00064D86 /* UIColor+.swift */,
+				2DA67D7829B6323300064D86 /* UIFont+.swift */,
 				2DA67D9529B634F800064D86 /* UILabel+.swift */,
+				2DA67DA529B6411100064D86 /* UIView+.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -114,6 +116,10 @@
 			isa = PBXGroup;
 			children = (
 				2DA67D9829B6392D00064D86 /* CustomButton.swift */,
+				2DA67DA029B63D6500064D86 /* InputView.swift */,
+				2DA67DAA29B64A6400064D86 /* InputArea.swift */,
+				2DA67DAC29B64D8F00064D86 /* VerticalStack.swift */,
+				2DA67DAE29B64E0700064D86 /* HorizontalStack.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -121,8 +127,46 @@
 		2DA67D9A29B63C1E00064D86 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				2DA67D9D29B63CF300064D86 /* Register */,
 			);
 			path = Scenes;
+			sourceTree = "<group>";
+		};
+		2DA67D9B29B63C6700064D86 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2DA67D6F29B62CB200064D86 /* Info.plist */,
+				2DA67D6C29B62CB200064D86 /* LaunchScreen.storyboard */,
+				2DA67D6A29B62CB200064D86 /* Assets.xcassets */,
+				2DA67D7A29B6327F00064D86 /* Inter */,
+				2DA67DB029B652BE00064D86 /* Validations.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2DA67D9C29B63C7300064D86 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				2DA67D6129B62CB100064D86 /* AppDelegate.swift */,
+				2DA67D6329B62CB100064D86 /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		2DA67D9D29B63CF300064D86 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				2DA67D9E29B63D1100064D86 /* RegisterController.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		2DA67DA729B649F500064D86 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				2DA67DA829B64A0200064D86 /* InputViewDelegate.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +185,9 @@
 			dependencies = (
 			);
 			name = BasicNoteApp;
+			packageProductDependencies = (
+				2DA67DA329B63F2500064D86 /* SnapKit */,
+			);
 			productName = BasicNoteApp;
 			productReference = 2DA67D5E29B62CB100064D86 /* BasicNoteApp.app */;
 			productType = "com.apple.product-type.application";
@@ -169,6 +216,9 @@
 				Base,
 			);
 			mainGroup = 2DA67D5529B62CB100064D86;
+			packageReferences = (
+				2DA67DA229B63F2500064D86 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 2DA67D5F29B62CB100064D86 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -187,7 +237,6 @@
 				2DA67D9129B6327F00064D86 /* Inter-SemiBold.ttf in Resources */,
 				2DA67D6B29B62CB200064D86 /* Assets.xcassets in Resources */,
 				2DA67D8929B6327F00064D86 /* Inter-Medium.ttf in Resources */,
-				2DA67D6929B62CB100064D86 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,10 +248,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				2DA67D9629B634F800064D86 /* UILabel+.swift in Sources */,
-				2DA67D6629B62CB100064D86 /* ViewController.swift in Sources */,
 				2DA67D7729B62CFB00064D86 /* UIColor+.swift in Sources */,
+				2DA67DAD29B64D8F00064D86 /* VerticalStack.swift in Sources */,
 				2DA67D7929B6323300064D86 /* UIFont+.swift in Sources */,
+				2DA67D9F29B63D1100064D86 /* RegisterController.swift in Sources */,
+				2DA67DAB29B64A6400064D86 /* InputArea.swift in Sources */,
+				2DA67DB129B652BE00064D86 /* Validations.swift in Sources */,
 				2DA67D9929B6392D00064D86 /* CustomButton.swift in Sources */,
+				2DA67DAF29B64E0700064D86 /* HorizontalStack.swift in Sources */,
+				2DA67DA129B63D6500064D86 /* InputView.swift in Sources */,
+				2DA67DA929B64A0200064D86 /* InputViewDelegate.swift in Sources */,
+				2DA67DA629B6411100064D86 /* UIView+.swift in Sources */,
 				2DA67D6229B62CB100064D86 /* AppDelegate.swift in Sources */,
 				2DA67D6429B62CB100064D86 /* SceneDelegate.swift in Sources */,
 			);
@@ -211,14 +267,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		2DA67D6729B62CB100064D86 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2DA67D6829B62CB100064D86 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		2DA67D6C29B62CB200064D86 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -353,10 +401,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = HG8VJQPKXZ;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = BasicNoteApp/Info.plist;
+				INFOPLIST_FILE = BasicNoteApp/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -381,10 +428,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = HG8VJQPKXZ;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = BasicNoteApp/Info.plist;
+				INFOPLIST_FILE = BasicNoteApp/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -422,6 +468,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2DA67DA229B63F2500064D86 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2DA67DA329B63F2500064D86 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2DA67DA229B63F2500064D86 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2DA67D5629B62CB100064D86 /* Project object */;
 }
