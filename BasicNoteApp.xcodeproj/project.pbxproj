@@ -30,6 +30,9 @@
 		2DA67DB529B671EA00064D86 /* InputStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA67DB429B671EA00064D86 /* InputStack.swift */; };
 		2DA67DB729B6746A00064D86 /* InputStackDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA67DB629B6746A00064D86 /* InputStackDelegate.swift */; };
 		2DA67DB929B67E5A00064D86 /* UIButton+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA67DB829B67E5A00064D86 /* UIButton+.swift */; };
+		2DA67DBC29B6823500064D86 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA67DBB29B6823500064D86 /* LoginController.swift */; };
+		2DA67DBF29B684CA00064D86 /* ForgotPasswordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA67DBE29B684CA00064D86 /* ForgotPasswordController.swift */; };
+		2DA67DC129B6873C00064D86 /* AlertSheetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA67DC029B6873C00064D86 /* AlertSheetController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +60,9 @@
 		2DA67DB429B671EA00064D86 /* InputStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputStack.swift; sourceTree = "<group>"; };
 		2DA67DB629B6746A00064D86 /* InputStackDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputStackDelegate.swift; sourceTree = "<group>"; };
 		2DA67DB829B67E5A00064D86 /* UIButton+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+.swift"; sourceTree = "<group>"; };
+		2DA67DBB29B6823500064D86 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		2DA67DBE29B684CA00064D86 /* ForgotPasswordController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordController.swift; sourceTree = "<group>"; };
+		2DA67DC029B6873C00064D86 /* AlertSheetController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertSheetController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +143,8 @@
 		2DA67D9A29B63C1E00064D86 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				2DA67DBD29B684BC00064D86 /* Forgot */,
+				2DA67DBA29B6822300064D86 /* Login */,
 				2DA67D9D29B63CF300064D86 /* Register */,
 			);
 			path = Scenes;
@@ -179,6 +187,23 @@
 				2DA67DB629B6746A00064D86 /* InputStackDelegate.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		2DA67DBA29B6822300064D86 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				2DA67DBB29B6823500064D86 /* LoginController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		2DA67DBD29B684BC00064D86 /* Forgot */ = {
+			isa = PBXGroup;
+			children = (
+				2DA67DBE29B684CA00064D86 /* ForgotPasswordController.swift */,
+				2DA67DC029B6873C00064D86 /* AlertSheetController.swift */,
+			);
+			path = Forgot;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,13 +284,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DA67DBC29B6823500064D86 /* LoginController.swift in Sources */,
 				2DA67D9629B634F800064D86 /* UILabel+.swift in Sources */,
 				2DA67DB529B671EA00064D86 /* InputStack.swift in Sources */,
 				2DA67D7729B62CFB00064D86 /* UIColor+.swift in Sources */,
 				2DA67DAD29B64D8F00064D86 /* VerticalStack.swift in Sources */,
+				2DA67DBF29B684CA00064D86 /* ForgotPasswordController.swift in Sources */,
 				2DA67DB729B6746A00064D86 /* InputStackDelegate.swift in Sources */,
 				2DA67D7929B6323300064D86 /* UIFont+.swift in Sources */,
 				2DA67D9F29B63D1100064D86 /* RegisterController.swift in Sources */,
+				2DA67DC129B6873C00064D86 /* AlertSheetController.swift in Sources */,
 				2DA67DAB29B64A6400064D86 /* InputArea.swift in Sources */,
 				2DA67DB129B652BE00064D86 /* Validations.swift in Sources */,
 				2DA67D9929B6392D00064D86 /* CustomButton.swift in Sources */,

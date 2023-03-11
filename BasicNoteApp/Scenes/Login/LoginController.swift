@@ -1,5 +1,5 @@
 //
-//  RegisterController.swift
+//  LoginController.swift
 //  BasicNoteApp
 //
 //  Created by Emir Alkal on 6.03.2023.
@@ -7,18 +7,17 @@
 
 import UIKit
 
-final class RegisterController: UIViewController, InputStackDelegate {
-    
+final class LoginController: UIViewController, InputStackDelegate {
     func didValidForm() {
-        signUpButton.isEnabled = true
+        loginButton.isEnabled = true
     }
     
     func didInvalidForm() {
-        signUpButton.isEnabled = false
+        loginButton.isEnabled = false
     }
     
     private let labelsStack = VerticalStack([
-        UILabel(text: "Sign Up", .title1, .textPrimary, alignment: .center),
+        UILabel(text: "Login", .title1, .textPrimary, alignment: .center),
         UILabel(text: "Login or sign up to continue using our app.", .title3, .textSecondary, alignment: .center)
     ], spacing: 16)
     
@@ -34,20 +33,20 @@ final class RegisterController: UIViewController, InputStackDelegate {
         UIView(), forgotButton
     ])
     
-    private let signUpButton: CustomButton = {
-        let button = CustomButton(title: "Sign Up")
+    private let loginButton: CustomButton = {
+        let button = CustomButton(title: "Login")
         button.heightAnchor.constraint(equalToConstant: 53).isActive = true
         button.isEnabled = false
         button.layer.cornerRadius = 5
         return button
     }()
     
-    private let inputStack = InputStack([InputArea(.name), InputArea(.email), InputArea(.password)])
-    private let signInButton = UIButton(title: "Sign in now", textColor: .purple100, font: .title3medium)
-    
+    private let inputStack = InputStack([InputArea(.email), InputArea(.password)])
+    private let signUpButton = UIButton(title: "Sign up now", textColor: .purple100, font: .title3medium)
+
     private lazy var toSignInStack = HorizontalStack([
-        UILabel(text: "Already have an account?", .title3medium, .textSecondary),
-        signInButton
+        UILabel(text: "New user?", .title3medium, .textSecondary),
+        signUpButton
     ], spacing: 2)
     
     private lazy var overallStack = VerticalStack([
@@ -55,16 +54,16 @@ final class RegisterController: UIViewController, InputStackDelegate {
     ], spacing: 30)
     
     private lazy var bottomStack = VerticalStack([
-        forgotPassword, signUpButton
+        forgotPassword, loginButton
     ], spacing: 12)
     
     override func viewDidLoad() {
         super.viewDidLoad()
         inputStack.delegate = self
+        inputStack.resultArray[.name] = true
         setupViews()
         setupGesture()
-        signInButton.addTarget(self, action: #selector(handleTapSignInButton), for: .touchUpInside)
-        forgotButton.addTarget(self, action: #selector(handleForgotButton), for: .touchUpInside)
+        signUpButton.addTarget(self, action: #selector(handleTapSignUpButton), for: .touchUpInside)
     }
     
     private func setupGesture() {
@@ -74,15 +73,8 @@ final class RegisterController: UIViewController, InputStackDelegate {
     }
     
     @objc private func handleTap() { view.endEditing(true) }
-    @objc private func handleTapSignInButton() {
-        let destVC = LoginController()
-        destVC.modalPresentationStyle = .fullScreen
-        destVC.modalTransitionStyle = .flipHorizontal
-        present(destVC, animated: true)
-    }
-    
-    @objc private func handleForgotButton() {
-        let destVC = ForgotPasswordController()
+    @objc private func handleTapSignUpButton() {
+        let destVC = RegisterController()
         destVC.modalPresentationStyle = .fullScreen
         destVC.modalTransitionStyle = .flipHorizontal
         present(destVC, animated: true)

@@ -21,7 +21,7 @@ final class CustomButton: UIButton {
                     self.backgroundColor = color
                 }
             } else {
-                if let color = disabledBackgroundColor      {
+                if let color = disabledBackgroundColor {
                     self.backgroundColor = color
                 }
             }
