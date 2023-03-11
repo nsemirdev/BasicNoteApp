@@ -33,6 +33,7 @@
 		2DA67DBC29B6823500064D86 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA67DBB29B6823500064D86 /* LoginController.swift */; };
 		2DA67DBF29B684CA00064D86 /* ForgotPasswordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA67DBE29B684CA00064D86 /* ForgotPasswordController.swift */; };
 		2DA67DC129B6873C00064D86 /* AlertSheetController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA67DC029B6873C00064D86 /* AlertSheetController.swift */; };
+		2DB66B3429BD1726006D83DB /* HelperFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DB66B3329BD1726006D83DB /* HelperFunctions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +64,7 @@
 		2DA67DBB29B6823500064D86 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		2DA67DBE29B684CA00064D86 /* ForgotPasswordController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordController.swift; sourceTree = "<group>"; };
 		2DA67DC029B6873C00064D86 /* AlertSheetController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertSheetController.swift; sourceTree = "<group>"; };
+		2DB66B3329BD1726006D83DB /* HelperFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperFunctions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 				2DA67D9529B634F800064D86 /* UILabel+.swift */,
 				2DA67DA529B6411100064D86 /* UIView+.swift */,
 				2DA67DB829B67E5A00064D86 /* UIButton+.swift */,
+				2DB66B3329BD1726006D83DB /* HelperFunctions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -293,6 +296,7 @@
 				2DA67DB729B6746A00064D86 /* InputStackDelegate.swift in Sources */,
 				2DA67D7929B6323300064D86 /* UIFont+.swift in Sources */,
 				2DA67D9F29B63D1100064D86 /* RegisterController.swift in Sources */,
+				2DB66B3429BD1726006D83DB /* HelperFunctions.swift in Sources */,
 				2DA67DC129B6873C00064D86 /* AlertSheetController.swift in Sources */,
 				2DA67DAB29B64A6400064D86 /* InputArea.swift in Sources */,
 				2DA67DB129B652BE00064D86 /* Validations.swift in Sources */,

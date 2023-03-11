@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol AlertSheetDelegate {
+    func didTapButton()
+}
+
 final class AlertSheetController: UIViewController {
     
     private let actionButton: CustomButton = {
@@ -29,6 +33,8 @@ final class AlertSheetController: UIViewController {
         actionButton
     ], spacing: 24)
 
+    var delegate: AlertSheetDelegate?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
@@ -40,13 +46,10 @@ final class AlertSheetController: UIViewController {
             make.trailing.equalToSuperview().offset(-24)
             make.top.equalToSuperview().offset(36)
         }
-        let panGesture = UITapGestureRecognizer(target: nil, action: #selector(handlePan))
-        view.addGestureRecognizer(panGesture)
+        actionButton.addTarget(self, action: #selector(handleLoginPressed), for: .touchUpInside)
     }
     
-    @objc private func handlePan() {
-        print("panning")
+    @objc private func handleLoginPressed() {
+        delegate?.didTapButton()
     }
-    
-
 }

@@ -49,6 +49,8 @@ final class CustomButton: UIButton {
         setBackgroundColor(.purple50, for: .disabled)
         setTitleColor(.white, for: .normal)
         setTitleColor(.purple100, for: .disabled)
+        layer.cornerRadius = 5
+        heightAnchor.constraint(equalToConstant: 53).isActive = true
     }
     
     convenience init(title: String) {

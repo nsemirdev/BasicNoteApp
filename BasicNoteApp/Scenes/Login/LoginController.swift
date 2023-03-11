@@ -64,6 +64,7 @@ final class LoginController: UIViewController, InputStackDelegate {
         setupViews()
         setupGesture()
         signUpButton.addTarget(self, action: #selector(handleTapSignUpButton), for: .touchUpInside)
+        forgotButton.addTarget(self, action: #selector(handleForgotButton), for: .touchUpInside)
     }
     
     private func setupGesture() {
@@ -78,6 +79,13 @@ final class LoginController: UIViewController, InputStackDelegate {
         destVC.modalPresentationStyle = .fullScreen
         destVC.modalTransitionStyle = .flipHorizontal
         present(destVC, animated: true)
+    }
+    
+    @objc private func handleForgotButton() {
+        let forgotVC = ForgotPasswordController()
+        forgotVC.modalTransitionStyle = .flipHorizontal
+        forgotVC.modalPresentationStyle = .fullScreen
+        present(forgotVC, animated: true)
     }
     
     private func setupViews() {

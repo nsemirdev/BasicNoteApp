@@ -7,7 +7,14 @@
 
 import UIKit
 
-final class ForgotPasswordController: UIViewController, InputStackDelegate {
+final class ForgotPasswordController: UIViewController, InputStackDelegate, AlertSheetDelegate {
+    func didTapButton() {
+        let loginVC = LoginController()
+        loginVC.modalTransitionStyle = .flipHorizontal
+        loginVC.modalPresentationStyle = .fullScreen
+        present(loginVC, animated: true)
+    }
+    
     func didValidForm() {
         resetButton.isEnabled = true
     }
@@ -44,6 +51,7 @@ final class ForgotPasswordController: UIViewController, InputStackDelegate {
         resetButton.addTarget(self, action: #selector(handleResetButton), for: .touchUpInside)
         labelsStack.alignment = .center
         setupViews()
+        alertSheet.delegate = self
     }
     
     let alertSheet = AlertSheetController()
